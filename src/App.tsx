@@ -8,6 +8,8 @@ import useNotificationPermission from './useNotificationPermission';
 function App() {
   useNotificationPermission();
 
+	console.log('test');
+
   let deferredPrompt: any;
   useEffect(() => {
     window.addEventListener('beforeinstallprompt', (e) => {
